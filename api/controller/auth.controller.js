@@ -81,6 +81,7 @@ export const googleAuth = async (req, res, next) => {
         .json(rest);
     }
   } catch (error) {
+    console.log(`errrrr`,error);
     next(error);
   }
 };
